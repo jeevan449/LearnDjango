@@ -4,4 +4,12 @@
 
 	<a href="create/">Add Data</a>
 	<h1>Below is added data</h1>
+
+	<h4>Current time is {{time}}</h4>
+
+	<ul>
+		{% for i in data %}
+		<li>{{i.name}}</li>
+		{% endfor %}
+	</ul>
 {% endblock %}
